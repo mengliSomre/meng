@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Pvm-1z-FDX">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--我-->
+        <scene sceneID="5KZ-S5-D67">
+            <objects>
+                <tableViewController id="psm-HQ-sPa" customClass="ProfileViewController" customModule="WeiBoStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="HzF-B8-NtI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="psm-HQ-sPa" id="saa-oB-Q4x"/>
+                            <outlet property="delegate" destination="psm-HQ-sPa" id="FC1-mp-JAy"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="我" id="KYG-Ct-w6o"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GB1-I3-rTL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="601" y="938"/>
+        </scene>
+        <!--我-->
+        <scene sceneID="CrV-jS-fPS">
+            <objects>
+                <navigationController id="Pvm-1z-FDX" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="我" image="tabbar_profile" selectedImage="tabbar_profile_highlighted" id="n9l-DH-iti"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4_7.fullscreen"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3oI-r3-QfG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="psm-HQ-sPa" kind="relationship" relationship="rootViewController" id="vDh-Ge-tAc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Ls-IH-zK0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-353" y="938"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tabbar_profile" width="16" height="16"/>
+        <image name="tabbar_profile_highlighted" width="16" height="16"/>
+    </resources>
+</document>
